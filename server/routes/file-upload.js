@@ -37,7 +37,7 @@ router.post('/image-upload', function(req, res) {
 router.get('/list',function(req,res){
   employees.find({},function(err,result){
     if(err) res.status(500).send(err);
-    res.status(200).send({employees:JSON.stringify(result)});
+    res.status(200).send({employees:result});
   })
 })
 
