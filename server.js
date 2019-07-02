@@ -12,8 +12,9 @@ app.use('/', function (req, res) {
 
 
     res.send("Node Running Here");
-}).listen(process.env.PORT || 3000);
+});
 // var userroutes=require('./server/routes/image-upload');
+app.listen(process.env.PORT || 3001);
 
 
 console.log("Node is Running");
