@@ -34,5 +34,11 @@ router.post('/image-upload', function(req, res) {
     // return res.json({'imageUrl': req.file.location});
   });
 });
+router.get('/list',function(req,res){
+  employees.find({},function(err,result){
+    if(err) res.status(500).send(err);
+    res.status(200).send(JSON.stringify(result));
+  })
+})
 
 module.exports = router;
