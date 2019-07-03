@@ -2,8 +2,7 @@ var AWS = require('aws-sdk');
 
 AWS.config.region = 'us-east-1';
 AWS.config.update({
-    accessKeyId: "AKIAVBW4WVT7NPK6TCVC",
-    secretAccessKey: "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",
+   
 });
 
 var multer = require('multer')
